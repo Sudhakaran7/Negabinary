@@ -1,0 +1,63 @@
+Given two numbers arr1 and arr2 in base -2, return the result of adding them together.
+Each number is given in array format:  as an array of 0s and 1s, from most significant bit to least significant bit.  For example, arr = [1,1,0,1] 
+represents the number (-2)^3 + (-2)^2 + (-2)^0 = -3.  A number arr in array format is also guaranteed to have no leading zeros: either arr == [0] or arr[0] == 1.
+Return the result of adding arr1 and arr2 in the same format: as an array of 0s and 1s with no leading zeros.
+
+Input Description:
+First line contains N,M. (1<N,M<100)
+Second lines contains, N elements of integers in array1.
+Third lines contains, M elements of integers in array2.
+
+Output Description:
+Print the array after adding them together in base -2.
+
+Sample Input:
+5 3
+1 1 1 1 1
+1 0 1
+
+Sample Output:
+1 0 0 0 0
+
+Explanation:
+Adding both arrays after converting them into base -2, we get 1 0 0 0 0
+
+Sample Input:
+4 2
+1 0 0 1
+0 1
+
+Sample Output:
+1 1 1 0
+
+Sample Input:
+2 4
+1 1
+0 0 1 1
+
+Sample Output:
+1 0
+
+Sample Input:
+3 3
+1 0 1
+1 1 1
+
+Sample Output:
+1 1 0 0 0
+
+Sample Input:
+3 6
+0 1 1
+1 1 1 0 1 0
+
+Sample Output:
+1 0 0 1 0 1
+
+Sample Input:
+4 5
+1 0 0 1
+1 1 1 1 1
+
+Sample Output:
+1 0 0
